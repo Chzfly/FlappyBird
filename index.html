@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flappybird</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow: hidden;
+        }
+        canvas{
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas"></canvas>
+    <audio src="./R/audio/bgm.mp3" class="bgm" loop></audio>
+    <audio src="./R/audio/jiuguan.mp3" class="jiuguan"  loop></audio>
+    <audio src="./R/audio/dianji.mp3" class="dianji"></audio>
+    <audio src="./R/audio/death.mp3" class="death"></audio>
+    <audio src="./R/audio/defen.mp3" class="defen"></audio>
+
+    <script src="./js/Game.js"></script>
+    <script src="./js/Background.js"></script>
+    <script src="./js/Land.js"></script>
+    <script src="./js/Pipe.js"></script>
+    <script src="./js/Bird.js"></script>
+    <script src="./js/SceneManager.js"></script>
+    <script>
+        var game = new Game({
+            "canvasid" : '#mycanvas',
+            "Rjsonurl" : "R.json"
+        });
+    </script>
+</body>
+</html>
