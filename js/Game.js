@@ -75,7 +75,7 @@
             }
         }
         xhr.open("get", this.Rjsonurl, true);
-        xhr.send(null);
+        xhr.send();
     }
     //开始游戏
     Game.prototype.start = function (){
