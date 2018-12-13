@@ -21,6 +21,4 @@ Html5、面向对象、中介者模式、场景管理器、Ajax、localStorage�
 
 ### 项目展示
 
-#### 游戏结束界面
-
 <img src="https://github.com/Chzfly/FlappyBird/blob/master/captures/showBird.gif" width="300"/>
